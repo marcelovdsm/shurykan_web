@@ -1,5 +1,14 @@
+"use client"
+import { Header } from "@/components/Header";
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "./styles/themes/default";
+import { GlobalStyle } from "./styles/global";
+
 export default function Home() {
   return (
-    <h1>hello</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <Header />
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
