@@ -14,16 +14,16 @@ export const HeaderNav = styled.nav`
 
   a {
     text-decoration: none;
-    color: black;
+    letter-spacing: 0.125rem;
+    color: ${props => props.theme.white};
     font-weight: bold;
-    background: rgba(10, 10, 10, 0.2);
     padding: .3rem;
-    border-radius: 2px;
+    border-radius: 7px;
     transition: .2s;
   }
 
   a:hover{
-      background: rgba(10, 10, 10, 0.6);
-      color: #ececec;
+      background: ${props => props.theme.white};
+      color: ${props => props.theme.black};
     }
 `
